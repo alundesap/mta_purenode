@@ -5,6 +5,24 @@
     "logoutEndpoint": "/do/logout"
   },
   "routes": [
+	{
+		"source": "(.*)(.xsjs)",
+		"destination": "xsjs_be",
+		"csrfProtection": false,
+		"authenticationType": "xsuaa"
+	},
+	{
+		"source": "(.*)(.xsodata)",
+		"destination": "xsjs_be", 
+		"csrfProtection": false,
+		"authenticationType": "xsuaa"
+	},
+	{
+		"source": "/node(.*)",
+		"destination": "js_be",
+		"csrfProtection": true,
+		"authenticationType": "xsuaa"
+	},
     {
 		"localDir": "resources",
 		"source": "^/(.*)", 
