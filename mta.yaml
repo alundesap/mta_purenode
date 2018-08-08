@@ -18,7 +18,7 @@ modules:
    parameters:
       host: mta-purenode-web
       disk-quota: 256M
-      memory: 256M
+      memory: 96M
    requires:
     - name: mta_purenode_uaa
     - name: xsjs_api
@@ -40,6 +40,7 @@ modules:
    path: node
    parameters:
       host: mta-purenode-node
+      memory: 96MB
    requires:
     - name: mta_purenode_uaa
     - name: mta_purenode_hdi
@@ -54,6 +55,7 @@ modules:
    path: xsjs
    parameters:
       host: mta-purenode-xsjs
+      memory: 128MB
    requires:
     - name: mta_purenode_hdi
    provides:
