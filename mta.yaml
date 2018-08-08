@@ -1,5 +1,5 @@
 ID: mta_purenode
-_schema-version: '2.1'
+_schema-version: '2.0'
 description: Multi-Target application using Pure NodeJS not XSJS
 version: 0.0.1
 
@@ -69,10 +69,4 @@ resources:
       service-plan: lite
       service: destination
    type: org.cloudfoundry.managed-service
-
-
- - name: hdi_dbx
-   properties:
-      hdi-container-name_2: ${service-name}
-   type: com.sap.xs.hdi-container
 
