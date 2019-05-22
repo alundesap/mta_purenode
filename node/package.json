@@ -1,16 +1,13 @@
 {
   "dependencies": {
-		"@sap/xssec": "2.1.12",
-		"@sap/xsenv": "1.2.9",
-		"@sap/hdbext": "4.7.2",
-		"@sap/hana-client": "~2.3",
-		"express": "~4.16",
-		"async": "latest",
-		"passport": "~0.4.0"
+    "@sap/xssec": "latest",
+    "@sap/xsenv": "latest",
+    "express": "latest",
+    "async": "latest",
+    "passport": "latest"
   },
   "description": "Pure NodeJS",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "files": [],
   "main": "server.js",
   "name": "node",
