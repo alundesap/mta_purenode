@@ -2,13 +2,9 @@
   "name": "web",
   "version": "0.0.1",
   "description": "",
-  "devDependencies": {
-   },
+  "devDependencies": {},
   "dependencies": {
-    "@sap/approuter": "5.4.1"
-  },
-  "engines": {
-    "node": ">=4.0.0 <9.0.0"
+    "@sap/approuter": "latest"
   },
   "scripts": {
     "start": "node node_modules/@sap/approuter/approuter.js"
